@@ -89,14 +89,7 @@
         }
     },
     
-    "custom/power_profile": {
-        //shows the current power profile and switches to next on click
-        "exec": "asusctl profile -p | sed s:'Active profile is'::",
-        "interval": 30,
-        "format": "󰈐{}", 
-        "on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",
-        "signal": 8
-    },
+    
 
    "custom/weather": {
         //shows the current weather and forecast
@@ -115,7 +108,9 @@
     "clock": {
         "format": "{:%I:%M %p}",
         "tooltip": true,
-        "tooltip-format": "{: %A, %B %e %Y}"
+        "tooltip-format": "<big>{:%A, %d/%m/%Y }</big>\n\n<tt><small>{calendar}</small></tt>"
+        //"exec": "~/.config/waybar/scripts/date_format.sh",
+        //"interval": 30
     },
 
     "backlight": {
