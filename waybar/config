@@ -3,16 +3,26 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     // "width": 1280, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["custom/rofi","hyprland/workspaces"],
     "modules-center": ["custom/music"],
     "modules-right": ["cpu","memory","temperature","pulseaudio", "backlight", "battery", "clock", "tray", "custom/lock", "custom/power"],
-    "hyprland/workspaces": {
+    
+    "custom/rofi": {
+    	"format": "  ",
+	    "on-click": "rofi -show drun",
+        "tooltip": false
+    },
+
+
+
+
+     "hyprland/workspaces": {
          "disable-scroll": true,
          "sort-by-name": true,
-         "format": " {icon} ",
-         "format-icons": {
+         "format": " {icon} "
+         /*"format-icons": {
              "default": "",
-         },
+         },*/
      },
     "tray": {
         "icon-size": 21,
@@ -30,8 +40,8 @@
     "clock": {
         "timezone": "America/Sao_Paulo",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "📅 {:%d/%m/%Y}",
-        "format": "🕐 {:%H:%M}"
+        "format-alt": "{:%d/%m/%Y}",
+        "format": "{:%H:%M}"
     },
     "backlight": {
         "device": "intel_backlight",
@@ -70,7 +80,7 @@
 
      "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon} {volume}%",
+        "format": "{icon}  {volume}%",
         "format-muted": "",
         "format-icons": {
             "default": ["", "", " "]
