@@ -106,7 +106,7 @@
     },
 
     "clock": {
-        "format": "{:%I:%M %p}",
+        "format": "{:%H:%M %p}",
         "tooltip": true,
         "tooltip-format": "<big>{:%A, %d/%m/%Y }</big>\n\n<tt><small>{calendar}</small></tt>"
         //"exec": "~/.config/waybar/scripts/date_format.sh",
