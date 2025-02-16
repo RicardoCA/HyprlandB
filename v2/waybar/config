@@ -8,7 +8,7 @@
     "height": 50,
     "modules-left": ["custom/launch_wofi","hyprland/workspaces","cpu","memory","disk","hyprland/window"],
     "modules-center": ["custom/lock_screen","custom/updates","clock","custom/power_btn"],
-    "modules-right": ["temperature","custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","tray","custom/weather","custom/light_dark"],
+    "modules-right": ["custom/temperature","custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","tray","custom/weather","custom/light_dark"],
     
     "hyprland/window": {
         "format": "{}"
@@ -165,11 +165,15 @@
         "scroll-step": 5
     },
     
-    "temperature": {
-        "thermal-zone": 1,
-        "format": " {temperatureC}°C",
-        "critical-threshold": 70,
-        "format-critical": " {temperatureF}°F",
-        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
-    }
+    "custom/temperature": {
+    "exec": "/home/ricardo/.config/waybar/scripts/temperature.sh",
+    "interval": 5,
+    "format": " {} C",
+    "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+}
+
+
+
+
+
 }
