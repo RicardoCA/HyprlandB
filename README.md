@@ -5,7 +5,8 @@ Instalar swaybg com o yay<br/>
 Instalar swaylock-effects com o yay<br/>
 Instalar waypaper com o yay<br/>
 Instalar ufw com o pacman e ative<br/>
-Instalar megacmd<br/><br/>
+Instalar megacmd com o pacman<br/>
+Instalar swayidle com o pacman<br/><br/>
 
 
 English:<br/>
@@ -16,3 +17,4 @@ Just place the folders inside the
 <b>Install waypaper with yay</b><br/>
 <b>Install ufw with pacman and enable</b><br/>
 <b>Install megacmd with pacman</b><br/>
+<b>Install swayidle with pacman</b><br/>
