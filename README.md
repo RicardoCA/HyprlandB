@@ -6,7 +6,8 @@ Instalar swaylock-effects com o yay<br/>
 Instalar waypaper com o yay<br/>
 Instalar ufw com o pacman e ative<br/>
 Instalar megacmd com o pacman<br/>
-Instalar swayidle com o pacman<br/><br/>
+Instalar swayidle com o pacman<br/>
+Instalar grim slurp wl-clipboard jq com o pacman<br/><br/>
 
 
 English:<br/>
@@ -18,3 +19,4 @@ Just place the folders inside the
 <b>Install ufw with pacman and enable</b><br/>
 <b>Install megacmd with pacman</b><br/>
 <b>Install swayidle with pacman</b><br/>
+<b>Install grim slurp wl-clipboard jq with pacman</b><br/>
