@@ -7,6 +7,7 @@ sudo pacman -S pacman-contrib<br/>
 sudo pacman -S libnotify<br/>
 sudo pacman -S dunst<br/>
 yay -S cava<br/>
+yay -S sddm-sugar-dark<br/>
 
 
 <h1>Arquivos de backup do Hyprland</h1><br/>
