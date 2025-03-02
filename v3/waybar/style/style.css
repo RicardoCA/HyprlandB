@@ -62,6 +62,7 @@ tooltip label{
 #window,
 #cpu,
 #disk,
+#custom-cava,
 #custom-updates,
 #memory,
 #clock,
@@ -137,3 +138,7 @@ tooltip label{
 }
 
 
+#custom-cava{
+    margin-right: 10px;
+    border-radius: 10px;
+}

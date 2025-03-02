@@ -74,6 +74,7 @@ tooltip label{
 #network,
 #tray,
 #workspaces,
+#custom-cava,
 #backlight {
     background: #1e1e2e;
     opacity: 0.8;
@@ -136,3 +137,7 @@ tooltip label{
     border-right: 0px;
 }
 
+#custom-cava{
+    margin-right: 10px;
+    border-radius: 10px;
+}

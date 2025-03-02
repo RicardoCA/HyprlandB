@@ -6,6 +6,7 @@ yay -S azote<br/>
 sudo pacman -S pacman-contrib<br/>
 sudo pacman -S libnotify<br/>
 sudo pacman -S dunst<br/>
+yay -S cava<br/>
 
 
 <h1>Arquivos de backup do Hyprland</h1><br/>
