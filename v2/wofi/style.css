@@ -1,0 +1,40 @@
+/* Configurações da janela */
+window {
+    background-color: #000000; /* Fundo preto */
+    color: #FFFFFF; /* Texto branco */
+    border: 2px solid #1E90FF; /* Borda azul ao redor da janela */
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+/* Campo de entrada (drun) */
+entry {
+    background-color: #1E1E1E; /* Fundo do campo de entrada */
+    color: #FFFFFF; /* Texto do campo de entrada */
+    border: 2px solid #1E90FF; /* Borda azul ao redor do campo de entrada */
+    border-radius: 4px; /* Cantos arredondados */
+    padding: 8px; /* Espaçamento interno */
+    margin: 8px; /* Margem ao redor do campo de entrada */
+}
+
+/* Lista de itens */
+list {
+    background-color: #000000; /* Fundo da lista */
+    color: #FFFFFF; /* Texto da lista */
+    border: none; /* Remove borda da lista */
+}
+
+/* Itens da lista */
+#listview {
+    padding: 8px; /* Espaçamento interno */
+}
+
+/* Remove as "flexinhas" (setas ou indicadores) */
+#listview > * {
+    outline: none; /* Remove o contorno ao selecionar */
+    border: none; /* Remove bordas */
+}
+
+/* Remove as setas de rolagem */
+scrollbar {
+    opacity: 0; /* Esconde a barra de rolagem */
+}

@@ -1,0 +1,15 @@
+
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    icon-theme: "Papirus";
+    display-drun: "";
+    drun-display-format: "{name}";
+    sidebar-mode: false;
+}
+
+entry {
+    placeholder: "Procurar Apps";
+}
+
+@theme "/home/ricardo/.local/share/rofi/themes/rounded-nord-dark.rasi"

@@ -1,3 +1,11 @@
+yay -S hyprland dolphin wofi hyprpaper alacritty
+sudo pacman -S sddm
+sudo systemctl enable sddm
+sudo pacman -S ttf-font-awesome
+yay -S azote
+
+
+
 <h1>Arquivos de backup do Hyprland</h1><br/>
 * Só colocar as pastas dentro da pasta
 <b>/home/user/.config/</b><br/>
