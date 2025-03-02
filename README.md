@@ -1,8 +1,8 @@
-yay -S hyprland dolphin wofi hyprpaper alacritty
-sudo pacman -S sddm
-sudo systemctl enable sddm
-sudo pacman -S ttf-font-awesome
-yay -S azote
+yay -S hyprland dolphin wofi hyprpaper alacritty<br/>
+sudo pacman -S sddm<br/>
+sudo systemctl enable sddm<br/>
+sudo pacman -S ttf-font-awesome<br/>
+yay -S azote<br/>
 
 
 
