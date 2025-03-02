@@ -8,7 +8,7 @@
     "height": 50,
     "modules-left": ["custom/launch_wofi","hyprland/workspaces","cpu","memory","disk","custom/temperature","hyprland/window"],
     "modules-center": ["custom/lock_screen","custom/updates","clock","custom/power_btn"],
-    "modules-right": ["custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","tray","custom/weather","custom/light_dark"],
+    "modules-right": ["custom/power_profile","backlight","pulseaudio","pulseaudio#microphone","tray","custom/weather","custom/light_dark"],
     
     "hyprland/window": {
         "format": "{}"
@@ -17,7 +17,8 @@
     "custom/launch_wofi": {
         "format": "🔍",
         "on-click": "rofi -show drun",
-        "tooltip": false
+        "tooltip": true,
+        "tooltip-format": "Lançador de Apps"
     },
 
     "custom/lock_screen": {
@@ -72,22 +73,20 @@
     },
 
     "hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "on-click": "activate",
-        "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": [],
-            "6": [],
-            "7": [],
-            "8": [],
-            "9": [],
-            "10": []
-        }
-    },
+    "format": "{icon}",
+    "format-icons": {
+        "1": "•",
+        "2": "•",
+        "3": "•",
+        "4": "•",
+        "5": "•",
+        "6": "•",
+        "7": "•",
+        "8": "•",
+        "9": "•",
+        "10": "•"
+    }
+},
     
     
 
@@ -115,22 +114,11 @@
         "min-length": 6
     },
 
-    "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 20
-        },
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-alt": "{time} {icon}",
-        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
-    },
+  
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "format-muted": "A",
+        "format-muted": "🔇",
         "on-click": "pamixer -t",
         "on-click-right": "pavucontrol",
         "on-scroll-up": "pamixer -i 5",
@@ -159,12 +147,21 @@
     },
     
     "custom/temperature": {
-    "exec": "~/.config/waybar/temperature.sh",
-    "interval": 5,
-    "format": " {} C",
-    "tooltip-format": "Temperatura do Processador: {}°C",
-    "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
-}
+        "exec": "~/.config/waybar/temperature.sh",
+        "interval": 5,
+        "format": " {} C",
+        "tooltip-format": "Temperatura do Processador: {}°C",
+        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+    },
+
+    "custom/weather": {
+        //shows the current weather and forecast
+        "tooltip" : true,
+        "format" : "{}",
+        "interval" : 30,
+        "exec" : "~/.config/waybar/scripts/waybar-wttr.py",
+        "return-type" : "json"
+    }
 
 
 

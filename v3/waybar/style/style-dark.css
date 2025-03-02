@@ -70,7 +70,6 @@ tooltip label{
 #custom-updates,
 #memory,
 #clock,
-#battery,
 #pulseaudio,
 #network,
 #tray,
@@ -85,11 +84,13 @@ tooltip label{
     
 }
 
+
+
 #tray, #custom-lock_screen, #temperature, #backlight, #custom-launch_wofi, #cpu {
     border-radius: 10px 0px 0px 10px;
 }
 
-#custom-light_dark, #custom-power_btn, #workspaces, #pulseaudio.microphone, #battery, #disk {
+#custom-light_dark, #custom-power_btn, #workspaces, #pulseaudio.microphone, #disk {
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
 }
@@ -126,6 +127,7 @@ tooltip label{
     color: #89b4fa;
     border-left: 0px;
     border-right: 0px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 #pulseaudio.microphone {
@@ -134,7 +136,3 @@ tooltip label{
     border-right: 0px;
 }
 
-#battery {
-    color: #a6e3a1;
-    border-left: 0px;
-}
