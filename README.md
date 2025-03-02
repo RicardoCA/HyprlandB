@@ -4,7 +4,8 @@ sudo systemctl enable sddm<br/>
 sudo pacman -S ttf-font-awesome<br/>
 yay -S azote<br/>
 sudo pacman -S pacman-contrib<br/>
-
+sudo pacman -S libnotify<br/>
+sudo pacman -S dunst<br/>
 
 
 <h1>Arquivos de backup do Hyprland</h1><br/>
