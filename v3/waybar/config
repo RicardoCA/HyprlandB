@@ -6,16 +6,16 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "height": 50,
-    "modules-left": ["custom/launch_wofi","hyprland/workspaces","cpu","memory","disk","hyprland/window"],
+    "modules-left": ["custom/launch_wofi","hyprland/workspaces","cpu","memory","disk","custom/temperature","hyprland/window"],
     "modules-center": ["custom/lock_screen","custom/updates","clock","custom/power_btn"],
-    "modules-right": ["custom/temperature","custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","tray","custom/weather","custom/light_dark"],
+    "modules-right": ["custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","tray","custom/weather","custom/light_dark"],
     
     "hyprland/window": {
         "format": "{}"
     },
 
     "custom/launch_wofi": {
-        "format": "",
+        "format": "🔍",
         "on-click": "rofi -show drun",
         "tooltip": false
     },
@@ -158,12 +158,13 @@
         "scroll-step": 5
     },
     
-    /*"custom/temperature": {
+    "custom/temperature": {
     "exec": "~/.config/waybar/temperature.sh",
     "interval": 5,
     "format": " {} C",
+    "tooltip-format": "Temperatura do Processador: {}°C",
     "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
-}*/
+}
 
 
 

@@ -3,6 +3,7 @@ sudo pacman -S sddm<br/>
 sudo systemctl enable sddm<br/>
 sudo pacman -S ttf-font-awesome<br/>
 yay -S azote<br/>
+sudo pacman -S pacman-contrib<br/>
 
 
 
