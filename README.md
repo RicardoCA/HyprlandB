@@ -1,5 +1,7 @@
 yay -S hyprland dolphin wofi hyprpaper alacritty<br/>
+yay -S rofi<br/>
 sudo pacman -S sddm<br/>
+sudo pacman -S kitty<br/>
 sudo systemctl enable sddm<br/>
 sudo pacman -S ttf-font-awesome<br/>
 yay -S azote<br/>
@@ -9,7 +11,8 @@ sudo pacman -S dunst<br/>
 yay -S cava<br/>
 yay -S sddm-sugar-dark<br/>
 yay -S archlinux-xdg-menu => execute: XDG_MENU_PREFIX=arch- kbuildsycoca6<br/>
-sudo pacman -S fastfetch
+sudo pacman -S fastfetch<br/>
+sudo pacman -S gedit
 
 
 <h1>Arquivos de backup do Hyprland</h1><br/>
