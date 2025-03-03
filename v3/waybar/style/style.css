@@ -85,7 +85,7 @@ tooltip label{
 }
 
 #custom-temperature{
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 #pulseaudio{
@@ -141,4 +141,13 @@ tooltip label{
 #custom-cava{
     margin-right: 10px;
     border-radius: 10px;
+}
+
+#custom-weather{
+    border-radius: 10px 0px 0px 10px;
+}
+
+#tray{
+    border-radius: 10px;
+    margin-right: 10px;
 }
