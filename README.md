@@ -8,6 +8,7 @@ sudo pacman -S libnotify<br/>
 sudo pacman -S dunst<br/>
 yay -S cava<br/>
 yay -S sddm-sugar-dark<br/>
+yay -S archlinux-xdg-menu => execute: XDG_MENU_PREFIX=arch- kbuildsycoca6
 
 
 <h1>Arquivos de backup do Hyprland</h1><br/>
