@@ -8,18 +8,9 @@
     "height": 50,
     "modules-left": ["custom/launch_wofi","hyprland/workspaces","cpu","memory","disk","custom/temperature","hyprland/window"],
     "modules-center": ["custom/lock_screen","custom/updates","clock","custom/power_btn"],
-    "modules-right": ["network","custom/power_profile","backlight","custom/cava","pulseaudio","pulseaudio#microphone","tray","custom/weather","custom/light_dark"],
+    "modules-right": ["custom/power_profile","backlight","custom/cava","network","pulseaudio","pulseaudio#microphone","tray","custom/weather","custom/light_dark"],
     
-    "network": {
-        
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "  {signalStrength}%",
-        "format-ethernet": "  {ipaddr}/{cidr}",
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "format-linked": "{ifname} (No IP)",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
-    },
+    
 
 
     "custom/cava": {
@@ -51,7 +42,7 @@
     },
 
     "custom/launch_wofi": {
-        "format": "🔍",
+        "format": "<span font='font logos'>&#xf303;</span>",
         "on-click": "rofi -show drun",
         "tooltip": true,
         "tooltip-format": "Lançador de Apps"
@@ -150,7 +141,15 @@
         "min-length": 6
     },
 
-  
+  "network": {
+        
+        "format-wifi": "  {signalStrength}%",
+        "format-ethernet": "🌐",
+        "tooltip-format": "Gateway: {gwaddr}\nIP:{ipaddr}/{cidr}",
+        "format-linked": "{ifname} (Sem IP)",
+        "format-disconnected": "Desconectado ⚠",
+        "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+    },
 
     "pulseaudio": {
         "format": "{icon} {volume}%",

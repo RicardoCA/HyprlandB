@@ -13,8 +13,9 @@ yay -S sddm-sugar-dark<br/>
 yay -S archlinux-xdg-menu => execute: XDG_MENU_PREFIX=arch- kbuildsycoca6<br/>
 sudo pacman -S fastfetch<br/>
 sudo pacman -S gedit<br/>
-sudo pacman -S wireplumber
-
+sudo pacman -S wireplumber<br/>
+yay -S ttf-font-logos<br/>
+sudo pacman -S wget<br/>
 
 <h1>Arquivos de backup do Hyprland</h1><br/>
 * Só colocar as pastas dentro da pasta

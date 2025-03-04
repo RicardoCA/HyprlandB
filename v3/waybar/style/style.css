@@ -137,6 +137,10 @@ tooltip label{
     border-right: 0px;
 }
 
+#network{
+    border-radius: 10px;
+    margin-right: 10px;
+}
 
 #custom-cava{
     margin-right: 10px;
@@ -151,3 +155,4 @@ tooltip label{
     border-radius: 10px;
     margin-right: 10px;
 }
+
