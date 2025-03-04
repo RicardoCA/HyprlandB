@@ -20,12 +20,13 @@
                 
                 # Verifica se o áudio parou
                 if ! pactl list sink-inputs | grep -q 'application.name ='; then 
-                    pkill -TERM cava  # Mata o cava
+                    pkill -TERM -P $$ cava  # Mata o cava associado a este processo
+                    echo '{\"text\": \"\"}';  # Emite um JSON vazio para limpar o Waybar
                     break; 
                 fi
             done
         else 
-            echo '{\"text\": \"Sem áudio\"}'; 
+            echo '{\"text\": \"\"}';  # Emite um JSON vazio quando não há áudio
             sleep 1;
         fi; 
     done",
