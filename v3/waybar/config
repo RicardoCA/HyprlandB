@@ -121,13 +121,15 @@
 },
     
     
-
-   
-
     "tray": {
         "icon-size": 18,
         "spacing": 10
     },
+
+    
+   
+
+    
 
     "clock": {
         "format": "{:%H:%M %p}",
