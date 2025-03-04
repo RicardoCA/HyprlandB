@@ -150,10 +150,11 @@
         
         "format-wifi": "  {signalStrength}%",
         "format-ethernet": "🌐",
-        "tooltip-format": "Gateway: {gwaddr}\nIP:{ipaddr}/{cidr}",
+        "tooltip-format": "Gateway: {gwaddr}\nIP:{ipaddr}/{cidr}\nDownload: {bandwidthDownBits}\nUpload: {bandwidthUpBits}",
         "format-linked": "{ifname} (Sem IP)",
         "format-disconnected": "Desconectado ⚠",
-        "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+        "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}",
+        "interval": 2
     },
 
     "pulseaudio": {
