@@ -12,7 +12,8 @@ yay -S cava<br/>
 yay -S sddm-sugar-dark<br/>
 yay -S archlinux-xdg-menu => execute: XDG_MENU_PREFIX=arch- kbuildsycoca6<br/>
 sudo pacman -S fastfetch<br/>
-sudo pacman -S gedit
+sudo pacman -S gedit<br/>
+sudo pacman -S wireplumber
 
 
 <h1>Arquivos de backup do Hyprland</h1><br/>
