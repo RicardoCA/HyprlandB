@@ -32,7 +32,7 @@ tooltip label{
 }
 
 #workspaces button.active {
-    color: #a6adc8;
+    color: pink;
 }
 
 #workspaces button.focused {
@@ -75,6 +75,7 @@ tooltip label{
 #tray,
 #workspaces,
 #custom-cava,
+#custom-explorer,
 #backlight {
     background: #1e1e2e;
     opacity: 0.8;
@@ -153,6 +154,10 @@ tooltip label{
 #tray{
     border-radius: 10px;
     margin-right: 10px;
+}
+
+#custom-explorer{
+    color: #b8f8b8;
 }
 
 

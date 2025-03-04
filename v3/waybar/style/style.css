@@ -27,12 +27,12 @@ tooltip label{
 
 #workspaces button {
     padding: 5px;
-    color: #313244;
+    color: rgb(173, 173, 173);
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: #a6adc8;
+    color: pink;
 }
 
 #workspaces button.focused {
@@ -71,6 +71,7 @@ tooltip label{
 #tray,
 #custom-temperature,
 #workspaces,
+#custom-explorer,
 #backlight {
     background: #e7e7ec;
     opacity: 0.8;
@@ -156,3 +157,6 @@ tooltip label{
     margin-right: 10px;
 }
 
+#custom-explorer{
+    color:pink;
+}
