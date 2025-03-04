@@ -8,8 +8,20 @@
     "height": 50,
     "modules-left": ["custom/launch_wofi","hyprland/workspaces","cpu","memory","disk","custom/temperature","hyprland/window"],
     "modules-center": ["custom/lock_screen","custom/updates","clock","custom/power_btn"],
-    "modules-right": ["custom/power_profile","backlight","custom/cava","pulseaudio","pulseaudio#microphone","tray","custom/weather","custom/light_dark"],
+    "modules-right": ["network","custom/power_profile","backlight","custom/cava","pulseaudio","pulseaudio#microphone","tray","custom/weather","custom/light_dark"],
     
+    "network": {
+        
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "  {signalStrength}%",
+        "format-ethernet": "  {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+    },
+
+
     "custom/cava": {
     "exec": "while true; do 
         if pactl list sink-inputs | grep -q 'application.name ='; then 
