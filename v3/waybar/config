@@ -25,7 +25,7 @@
                 fi
             done
         else 
-            echo '{\"text\": \"No audio\"}'; 
+            echo '{\"text\": \"Sem áudio\"}'; 
             sleep 1;
         fi; 
     done",
