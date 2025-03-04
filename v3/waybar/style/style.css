@@ -32,7 +32,7 @@ tooltip label{
 }
 
 #workspaces button.active {
-    color: pink;
+    color: black;
 }
 
 #workspaces button.focused {
@@ -87,6 +87,7 @@ tooltip label{
 
 #custom-temperature{
     border-radius: 10px 10px 10px 10px;
+    color: black;
 }
 
 #pulseaudio{
@@ -121,7 +122,7 @@ tooltip label{
 }
 
 #custom-launch_wofi {
-    color: #407cdd;
+    color: black;
     margin-left: 10px;
     border-right: 0px;
 }
@@ -150,6 +151,7 @@ tooltip label{
 
 #custom-weather{
     border-radius: 10px 0px 0px 10px;
+    color: black;
 }
 
 #tray{
@@ -158,5 +160,5 @@ tooltip label{
 }
 
 #custom-explorer{
-    color:pink;
+    color:black;
 }
